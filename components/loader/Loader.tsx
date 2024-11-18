@@ -6,6 +6,7 @@ import RecordingText from '../animations/RecordingText';
 import { useEffect, useState } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import logoMain from '@/assets/icons/logo-main.png';
 
 export default function Loader(){
     const [animateLogo, setAnimateLogo] = useState(true);
@@ -14,7 +15,7 @@ export default function Loader(){
         const timer = setTimeout(() => {
             setAnimateLogo(false)
             return
-        }, 300);
+        }, 200);
 
         // Cleanup the timer when the component unmounts
         return () => clearTimeout(timer);
@@ -42,8 +43,8 @@ export default function Loader(){
                 {/* top content */}
                 <div className='flex items-center gap-5'>
                     {/* logo container */}
-                    <div className=''>
-                        {/* <RecordingText /> */}
+                    <div className='flex items-center'>
+                        {animateLogo && <RecordingText />}
                         <Image
                             src={animateLogo ? loadingTextLogo : loadingTextLogo}
                             alt='loader text'
@@ -76,7 +77,7 @@ export default function Loader(){
                             <p>[Director]</p>
                             <p>[Photographer]</p>
                         </div>
-                        <p className='text-white font-semibold text-xl'>Grammy Loading</p>
+                        <p className='text-white font-semibold text-xl'>Heading To The Oscar</p>
                     </div>
                     <div className='flex-1 flex items-center justify-end gap-2'>
                         {[1,2,3].map(i => (
