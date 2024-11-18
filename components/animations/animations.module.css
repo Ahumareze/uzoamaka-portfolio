@@ -1,0 +1,14 @@
+
+.recordintTextDiv{
+    animation: fadeToTransparent 1s infinite;
+}
+
+@keyframes fadeToTransparent {
+    0% {
+      background-color: red;
+    }
+    100% {
+      background-color: transparent;
+    }
+}
+  
