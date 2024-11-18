@@ -1,5 +1,6 @@
 "use client"
 import loaderBackdrop from '@/assets/images/loader-backdrop.png';
+// @ts-ignore
 import loadingTextLogo from '@/assets/icons/loadingTextLogo.GIF';
 import Image from 'next/image';
 import RecordingText from '../animations/RecordingText';
