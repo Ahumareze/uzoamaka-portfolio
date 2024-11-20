@@ -73,10 +73,10 @@ export default function Loader(){
                 {/* bottom content */}
                 <div className='flex items-end gap-5'>
                     <div className='flex-1 space-y-2'>
-                        <div className='flex items-center gap-5 text-white/70'>
-                            <p>[Actor]</p>
-                            <p>[Director]</p>
-                            <p>[Photographer]</p>
+                        <div className='flex items-center gap-5 text-white/90'>
+                            <p>[ACTOR]</p>
+                            <p>[WRITER]</p>
+                            <p>[DIRECTOR]</p>
                         </div>
                         <p className='text-white font-semibold text-xl'>Heading To The Oscar</p>
                     </div>
