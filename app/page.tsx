@@ -1,10 +1,14 @@
+"use client"
 import Header from "@/components/general/Header";
 // import Loader from "@/components/loader/Loader";
 import Hero from "./components/hero/Hero";
 import { FaArrowRight } from "react-icons/fa";
 import Biography from "./components/biography/Biography";
 
+import Lenis from 'lenis'
+
 export default function Home() {
+
   return (
     <main className="bg-primary-white">
       {/* <Loader /> */}
