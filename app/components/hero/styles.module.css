@@ -1,12 +1,15 @@
 .scroll_container{
-    animation: slide 15s linear infinite;
+    animation: slide 30s linear infinite;
     position: absolute;
 }
 @keyframes slide {
     0% {
       top: 0;
     }
-    100% {
+    50% {
       top: -100%;
+    }
+    100% {
+      top: 0%;
     }
   }

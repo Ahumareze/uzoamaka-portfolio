@@ -9,8 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'primary-white': '#FFFDF2'
       },
       fontFamily: {
         gelica: ['var(--font-gelica)']
