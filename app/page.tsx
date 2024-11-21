@@ -20,6 +20,9 @@ export default function Home() {
         </div>
       </div>
       <Biography />
+      <div className="w-full h-screen bg-white p-20">
+        <div className="h-full w-full rounded-2xl bg-purple-900" />
+      </div>
     </main>
   );
 }
