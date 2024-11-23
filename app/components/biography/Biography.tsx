@@ -39,7 +39,7 @@ export default function Biography(){
     }, {scope: containerRef})
 
     return(
-        <div className="w-full flex relative" style={{ height: `calc(100vh + 200px)` }}  ref={containerRef}>
+        <div className="w-full flex relative " style={{ height: `calc(100vh + 200px)` }}  ref={containerRef}>
             <div className='w-[550px] sticky top-0 h-fit'>
                 <Image
                     src={biographyImage}
@@ -47,7 +47,7 @@ export default function Biography(){
                     className='w-full'
                 />
             </div>
-            <div className='flex-1 bg-[#F8F3F2]'>
+            <div className='flex-1 bg-[#F8F3F2] overflow-hidden' style={{ height: `calc(100vh + 200px)` }}>
                 <div className='flex items-center gap-3 pt-10 px-10'>
                     <div className='h-[10px] w-[10px] rounded-full bg-[#696969]' />
                     <p className='text-[#696969] text-xl'>Biography</p>

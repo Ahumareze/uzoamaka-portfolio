@@ -8,7 +8,7 @@ export default function Header(){
                 <p className="cursor-pointer">PROFILE</p>
                 <p className="cursor-pointer">FILMS</p>
                 <p className="cursor-pointer">BLOGS</p>
-                <p className="cursor-pointer">IN THE NEWS</p>
+                <p className="cursor-pointer">HIGHLIGHTS</p>
             </div>
             <div>
                 <p>Menu</p>

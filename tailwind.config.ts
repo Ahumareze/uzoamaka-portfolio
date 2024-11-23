@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-white': '#FFFDF2'
+        'primary-white': '#FFFDF2',
+        'primary-black': '#222229'
       },
       fontFamily: {
         gelica: ['var(--font-gelica)']
