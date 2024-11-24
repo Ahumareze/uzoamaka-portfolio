@@ -6,7 +6,7 @@ export default function Highlights(){
                 <h1 className="font-gelica text-7xl md:text-[140px] font-bold text-white">{number}</h1>
                 <div className="mt-5">
                     <p className="text-3xl font-medium text-[#FAFAFA] font-gelica">{title}</p>
-                    <p className="text-[#D3D3D3] font-gelica mt-2">{details}</p>
+                    <p className="text-[#D3D3D3] font-gelica mt-2 font-eculid">{details}</p>
                 </div>
             </div>
         )

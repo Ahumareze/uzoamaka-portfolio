@@ -22,6 +22,28 @@ const gelica = localFont({
     }
   ],
   variable: '--font-gelica'
+});
+
+const eculid = localFont({
+  src: [
+    {
+      path: '../public/fonts/eculid-bold.ttf',
+      weight: '700'
+    },
+    {
+      path: '../public/fonts/eculid-semibold.ttf',
+      weight: '600'
+    },
+    {
+      path: '../public/fonts/eculid-medium.ttf',
+      weight: '500'
+    },
+    {
+      path: '../public/fonts/eculid-regular.ttf',
+      weight: '400'
+    }
+  ],
+  variable: '--font-eculid'
 })
 
 export const metadata: Metadata = {
@@ -37,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gelica.variable} font-sans`}
+        className={`${gelica.variable} ${eculid.variable} font-sans`}
       >
         {children}
       </body>

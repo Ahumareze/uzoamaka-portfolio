@@ -13,7 +13,8 @@ export default {
         'primary-black': '#222229'
       },
       fontFamily: {
-        gelica: ['var(--font-gelica)']
+        gelica: ['var(--font-gelica)'],
+        eculid: ['var(--font-eculid)']
       }
     },
   },
