@@ -1,15 +1,18 @@
-.scroll_container{
+.container{
     animation: slide 30s linear infinite;
     position: absolute;
 }
+/* .container:hover {
+    animation-play-state: paused;
+} */
 @keyframes slide {
   0% {
-    top: 0;
+    left: 0;
   }
   50% {
-    top: -100%;
+    left: -100%;
   }
   100% {
-    top: 0%;
+    left: 0%;
   }
 }

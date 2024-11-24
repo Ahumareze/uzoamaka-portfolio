@@ -2,6 +2,7 @@ import Link from "next/link";
 import BlogCard from "./BlogCard";
 import { FaArrowRight } from "react-icons/fa";
 import { BLOGS } from "@/constants/blogsListing";
+import classes from './styles.module.css';
 
 export default function Blogs(){
     return(
@@ -21,23 +22,25 @@ export default function Blogs(){
                     </Link>
                 </div>
             </div>
-            <div className="w-full flex items-center gap-5 px-5">
-                {BLOGS.map(({
-                    image,
-                    title,
-                    details,
-                    readMinute,
-                    date
-                }, index) => (
-                    <BlogCard
-                        key={index}
-                        image={image}
-                        title={title}
-                        details={details}
-                        readMinute={readMinute}
-                        date={date}
-                    />
-                ))}
+            <div className="h-[600px]">
+                <div className={`${classes.container} w-full flex items-center gap-5 px-5`}>
+                    {BLOGS.map(({
+                        image,
+                        title,
+                        details,
+                        readMinute,
+                        date
+                    }, index) => (
+                        <BlogCard
+                            key={index}
+                            image={image}
+                            title={title}
+                            details={details}
+                            readMinute={readMinute}
+                            date={date}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     )
