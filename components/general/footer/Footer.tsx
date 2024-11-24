@@ -29,8 +29,8 @@ export default function Footer(){
         <div className="w-full px-[20px] md:px-[50px] bg-primary-white">
             <div className="flex items-center">
                 <div className="flex-1 flex items-center">
-                    <Link href={''} target="_blank">
-                        <h1 className="flex-1 text-5xl font-bold font-gelica text-primary-black">hellouzoamaka@gmail.com</h1>
+                    <Link href={'mailto:hellouzoamaka@gmail.com'} target="_blank">
+                        <h1 className="flex-1 text-5xl font-bold font-gelica text-primary-black hover:underline duration-300 ease-in-out">hellouzoamaka@gmail.com</h1>
                     </Link>
                 </div>
                 <div className="flex items-center">
@@ -41,13 +41,13 @@ export default function Footer(){
                     />
                     <SocialCard
                         icon={<RiInstagramFill />}
-                        link=""
+                        link="https://www.instagram.com/uzoamaka_a?igsh=OGxjdXJkbnU5ZWhy"
                         name="Life updates"
                         isLight
                     />
                     <SocialCard
                         icon={<FaXTwitter />}
-                        link=""
+                        link="https://x.com/uzoamaka_a1?s=21&t=Kf4Ot9_zpktg2pxUHVIIug"
                         name="Movie rants and vibes"
                     />
                 </div>
