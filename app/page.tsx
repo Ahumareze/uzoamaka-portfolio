@@ -11,6 +11,7 @@ import Footer from "@/components/general/footer/Footer";
 import YoutubeVideo from "./components/YoutubeVideo";
 import Highlights from "./components/highlights/Highlights";
 import Filmography from "./components/filmography/Filmography";
+import Posters from "./components/posters/Posters";
 
 export default function Home() {
 
@@ -35,7 +36,7 @@ export default function Home() {
       <Blogs />
       <Highlights />
       <Filmography />
-      <div className="h-screen w-full bg-[#2d2d33]" />
+      <Posters />
       <Footer />
     </main>
   );
