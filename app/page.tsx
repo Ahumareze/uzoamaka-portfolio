@@ -9,6 +9,7 @@ import Lenis from 'lenis'
 import Blogs from "./components/blogs/Blogs";
 import Footer from "@/components/general/footer/Footer";
 import YoutubeVideo from "./components/YoutubeVideo";
+import Highlights from "./components/highlights/Highlights";
 
 export default function Home() {
 
@@ -31,7 +32,7 @@ export default function Home() {
         <YoutubeVideo />
       </div>
       <Blogs />
-      <div className="h-screen w-full bg-[#2d2d33]" />
+      <Highlights />
       <Footer />
     </main>
   );
