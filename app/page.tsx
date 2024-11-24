@@ -10,6 +10,7 @@ import Blogs from "./components/blogs/Blogs";
 import Footer from "@/components/general/footer/Footer";
 import YoutubeVideo from "./components/YoutubeVideo";
 import Highlights from "./components/highlights/Highlights";
+import Filmography from "./components/filmography/Filmography";
 
 export default function Home() {
 
@@ -33,6 +34,8 @@ export default function Home() {
       </div>
       <Blogs />
       <Highlights />
+      <Filmography />
+      <div className="h-screen w-full bg-[#2d2d33]" />
       <Footer />
     </main>
   );

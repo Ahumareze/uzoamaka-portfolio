@@ -23,7 +23,7 @@ export default function Blogs(){
                 </div>
             </div>
             <div className="h-[600px]">
-                <div className={`${classes.container} w-full flex items-center gap-5 px-5`}>
+                <div className={` w-full flex items-center gap-5 px-5`}>
                     {BLOGS.map(({
                         image,
                         title,
