@@ -38,7 +38,7 @@ export default function Highlights(){
                     <StatItem
                         number="5"
                         title="Award Wins"
-                        details="#D3D3D3"
+                        details="Resume - Doings"
                     />
                     
                 </div>

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { FaMedium } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
+import { SiSubstack } from "react-icons/si";
 
 export default function Footer(){
 
@@ -10,7 +10,7 @@ export default function Footer(){
         return(
             <Link href={link} target="_blank">
                 <div className="relative w-[190px] h-[150px] flex flex-col gap-0 cursor-pointer group/item overflow-hidden">
-                    <div className={`flex-1 w-full flex items-center justify-center text-6xl ${isLight ? 'text-primary-black bg-primary-white' : 'bg-primary-black text-primary-white'}`}>
+                    <div className={`flex-1 w-full flex items-center justify-center text-5xl ${isLight ? 'text-primary-black bg-primary-white' : 'bg-primary-black text-primary-white'}`}>
                         <div className="relative group-hover/item:pb-10 group-hover/item:scale-90 duration-500 ease-in-out">
                             {icon}
                         </div>
@@ -35,7 +35,7 @@ export default function Footer(){
                 </div>
                 <div className="flex items-center">
                     <SocialCard
-                        icon={<FaMedium />}
+                        icon={<SiSubstack />}
                         link=""
                         name="Writings by Uzoamaka"
                     />
