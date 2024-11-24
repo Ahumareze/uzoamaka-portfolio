@@ -8,6 +8,7 @@ import Biography from "./components/biography/Biography";
 import Lenis from 'lenis'
 import Blogs from "./components/blogs/Blogs";
 import Footer from "@/components/general/footer/Footer";
+import YoutubeVideo from "./components/YoutubeVideo";
 
 export default function Home() {
 
@@ -27,9 +28,10 @@ export default function Home() {
       </div>
       <Biography />
       <div className="w-full h-screen p-20">
-        <div className="h-full w-full rounded-2xl bg-purple-900" />
+        <YoutubeVideo />
       </div>
       <Blogs />
+      <div className="h-screen w-full bg-[#2d2d33]" />
       <Footer />
     </main>
   );
