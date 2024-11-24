@@ -4,11 +4,10 @@ export default function YoutubeVideo(){
             <iframe 
                 style={{ width: "100%", height: "100%", borderRadius: 20 }}
                 src="https://www.youtube.com/embed/eAmCQPAcJfU?si=yFVfWYkc2bsuXiwL" 
-                title="YouTube video player" 
-                frameborder="0" 
+                title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
             >
             </iframe>
         </div>

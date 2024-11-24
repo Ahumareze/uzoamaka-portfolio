@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image"
-import { SiSubstack } from "react-icons/si"
+import { SiSubstack } from "react-icons/si";
+import avatar from '@/assets/images/avatar.png';
 
 export interface BlogCardType {
     image: StaticImageData,
@@ -11,10 +12,13 @@ export interface BlogCardType {
 
 export default function BlogCard({image, title, details, readMinute, date}: BlogCardType){
     return(
-        <div className="h-[600px] min-w-[600px] bg-red-500 rounded-xl bg-center bg-cover bg-no-repeat flex flex-col overflow-hidden" style={{backgroundImage: `url(${image.src})`}}>
+        <div className="h-[600px] min-w-[600px] bg-black/20 rounded-xl bg-center bg-cover bg-no-repeat flex flex-col overflow-hidden" style={{backgroundImage: `url(${image.src})`}}>
             <div className="flex items-center gap-3 p-5">
                 <Image
-
+                    src={avatar}
+                    height={50}
+                    width={50}
+                    alt="uzoamaka avatar"
                 />
                 <div className="font-gelica text-white">
                     <h3 className="text-2xl">Uzoamaka A.</h3>
