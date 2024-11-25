@@ -5,6 +5,16 @@ import { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { MovieItem } from "./MovieItem";
 
+import quiteMondayPoster from '@/assets/images/movie-posters/quiteMonday-poster.png';
+import ponziPoster from '@/assets/images/movie-posters/ponzi-poster.png';
+import loveLanguagePoster from '@/assets/images/movie-posters/loveLanguage-poster.png';
+
+const movies = [
+    quiteMondayPoster,
+    ponziPoster,
+    loveLanguagePoster
+]
+
 export interface MovieItemProps {
     title: string, 
     platform: StaticImageData,
@@ -30,8 +40,13 @@ export default function Filmography(){
                 <p className="max-w-[350px] text-right font-gelica text-[#8E8E8E] text-lg">'there are years that ask questions and years that answer'~ <span className="text-[#B4B4B4]">zora neale hurston.</span></p>
             </div>
             <div className="w-full flex items-center gap-10 md:gap-20 mt-10">
-                <div className="h-[450px] min-w-[420px] bg-black/20 rounded-md flex items-center justify-center">
-                    <h1>{selectedIndex}</h1>
+                <div className="h-[450px] min-w-[420px] max-w-[420px] rounded-md flex items-center justify-center relative">
+                    {selectedIndex <= movies.length &&
+                        <Image
+                            src={movies[selectedIndex]}
+                            alt=''
+                        />
+                    }
                 </div>
                 <div className="flex-1">
                     <div className="font-eculid grid grid-cols-[100px_170px_150px_1fr_150px] text-sm text-[#444444] gap-2 px-5 py-5 border-b border-[#B4B4B4]">
