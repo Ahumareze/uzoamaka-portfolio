@@ -22,7 +22,7 @@ export default function Hero(){
     return(
         <div className="h-screen overflow-hidden w-full bg-[#d6c7c4] bg-center bg-cover bg-no-repeat flex gap-10 px-[20px] md:px-[50px]" style={{backgroundImage: `url(${heroSectionBgImage.src})`}}>
             <div className='flex-1 flex items-end h-full overflow-hidden py-[20px]'>
-                <h1 className='text-primary-white text-5xl md:text-7xl lg:text-9xl font-extrabold m-0 p-0 font-gelica'>UZOAMAKA<br />ANIUNOH.</h1>
+                <h1 className='text-primary-white text-5xl md:text-7xl lg:text-9xl font-extrabold m-0 p-0 font-gelica' data-aos="fade-up">UZOAMAKA<br />ANIUNOH.</h1>
                 {/* <LargeText
                     text='UZOAMAKA'
                 /> */}

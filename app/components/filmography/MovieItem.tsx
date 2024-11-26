@@ -9,6 +9,7 @@ export const MovieItem = ({title, platform, year, role, link, directors, index, 
             <div 
                 className="font-eculid cursor-pointer group/movie grid items-center grid-cols-[100px_170px_150px_1fr_150px] text-sm text-[#1E1E1E] gap-2 px-5 py-5 border-b border-[#B4B4B4]"
                 onMouseEnter={() => handleHover(index)}
+                data-aos="fade-up"
             >
                 <p className="text-[#8E8E8E]">{year}</p>
                 <p>{title}</p>

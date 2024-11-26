@@ -12,7 +12,7 @@ export interface BlogCardType {
 
 export default function BlogCard({image, title, details, readMinute, date}: BlogCardType){
     return(
-        <div className="h-[600px] min-w-[600px] bg-black/20 rounded-xl bg-center bg-cover bg-no-repeat flex flex-col overflow-hidden" style={{backgroundImage: `url(${image.src})`}}>
+        <div className="h-[600px] min-w-[600px] bg-black/20 rounded-xl bg-center bg-cover bg-no-repeat flex flex-col overflow-hidden" data-aos="fade-left" style={{backgroundImage: `url(${image.src})`}}>
             <div className="flex items-center gap-3 p-5">
                 <Image
                     src={avatar}

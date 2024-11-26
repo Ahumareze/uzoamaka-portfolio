@@ -55,7 +55,7 @@ export default function Biography(){
                 <div>
                     <div className='pt-5 px-10 h-screen' id='earlyLife'>
                         <h1 className='font-gelica text-5xl font-bold text-[#444444]'>Early Life</h1>
-                        <div className='space-y-7 mt-5 text-base md:text-lg text-[#222229] font-eculid'>
+                        <div className='space-y-7 mt-5 text-base md:text-lg text-[#222229] font-eculid' data-aos="fade-up">
                             <p>Uzoamaka Aniunoh was born on August 25, 1990, in Lagos, Nigeria. Her early life was marked by a strong emphasis on education and the arts, with her parents providing unwavering support. Born into a family that valued creative expression, Uzoamaka's innate talent and passion for acting were nurtured from a young age.</p>
 
                             <p>Her family relocated to the United States during her childhood, exposing her to diverse cultural experiences that would later influence her acting career. Uzoamaka attended high school in the US before proceeding to study at the prestigious New York Film Academy, laying the groundwork for her professional acting career.</p>

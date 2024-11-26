@@ -13,10 +13,10 @@ export default function Blogs(){
                         <div className='h-[10px] w-[10px] rounded-full bg-[#696969]' />
                         <p className='text-[#696969] text-xl'>Blogs</p>
                     </div>
-                    <h1 className="text-3xl md:text-[55px] font-bold text-[#444444] font-gelica leading-[120%]">UZOAMAKA'S WORDS <br />AND THOUGHTS.</h1>
+                    <h1 className="text-3xl md:text-[55px] font-bold text-[#444444] font-gelica leading-[120%]" data-aos="fade-up">UZOAMAKA'S WORDS <br />AND THOUGHTS.</h1>
                 </div>
                 <div>
-                    <Link href={''} className="flex items-center gap-3 text-[#595959]">
+                    <Link href={''} className="flex items-center gap-3 text-[#595959]" data-aos="fade-right">
                         <p className="text-2xl font-gelica">Read all blogs</p>
                         <FaArrowRight size={24} />
                     </Link>

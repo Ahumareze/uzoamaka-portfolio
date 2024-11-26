@@ -35,9 +35,9 @@ export default function Filmography(){
                         <div className='h-[10px] w-[10px] rounded-full bg-[#696969]' />
                         <p className='text-[#696969] text-xl'>Appearances</p>
                     </div>
-                    <h1 className="text-3xl md:text-[55px] font-bold text-[#444444] font-gelica leading-[120%]">UZOAMAKA'S FILMOGRAPHY</h1>
+                    <h1 className="text-3xl md:text-[55px] font-bold text-[#444444] font-gelica leading-[120%]" data-aos="fade-up">UZOAMAKA'S FILMOGRAPHY</h1>
                 </div>
-                <p className="max-w-[350px] text-right font-gelica text-[#8E8E8E] text-lg">'there are years that ask questions and years that answer'~ <span className="text-[#B4B4B4]">zora neale hurston.</span></p>
+                <p className="max-w-[350px] text-right font-gelica text-[#8E8E8E] text-lg" data-aos="fade-left">'there are years that ask questions and years that answer'~ <span className="text-[#B4B4B4]">zora neale hurston.</span></p>
             </div>
             <div className="w-full flex items-center gap-10 md:gap-20 mt-10">
                 <div className="h-[450px] min-w-[420px] max-w-[420px] rounded-md flex items-center justify-center relative">
@@ -45,6 +45,7 @@ export default function Filmography(){
                         <Image
                             src={movies[selectedIndex]}
                             alt=''
+                            data-aos="fade-up"
                         />
                     }
                 </div>
