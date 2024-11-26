@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { MovieItem } from "./MovieItem";
+import { AnimatePresence, motion } from "motion/react"
 
 import quiteMondayPoster from '@/assets/images/movie-posters/quiteMonday-poster.png';
 import ponziPoster from '@/assets/images/movie-posters/ponzi-poster.png';
@@ -40,14 +41,22 @@ export default function Filmography(){
                 <p className="max-w-[350px] text-right font-gelica text-[#8E8E8E] text-lg" data-aos="fade-left">'there are years that ask questions and years that answer'~ <span className="text-[#B4B4B4]">zora neale hurston.</span></p>
             </div>
             <div className="w-full flex items-center gap-10 md:gap-20 mt-10">
-                <div className="h-[450px] min-w-[420px] max-w-[420px] rounded-md flex items-center justify-center relative">
-                    {selectedIndex <= movies.length &&
-                        <Image
-                            src={movies[selectedIndex]}
-                            alt=''
-                            data-aos="fade-up"
-                        />
-                    }
+                <div className="w-[420px] flex items-center justify-center">
+                    <AnimatePresence>
+                        <motion.div 
+                            key={selectedIndex}
+                            initial={{ scale: 0.8, opacity: 0}}
+                            animate={{ scale: 1, opacity: 1}}
+                            // exit={{ scale: 0.8, opacity: 0}}
+                            className="h-[450px] min-w-[420px] max-w-[420px] rounded-md flex items-center justify-center relative group cursor-pointer"
+                        >
+                            <Image
+                                src={movies[selectedIndex]}
+                                alt=''
+                                className="group-hover:scale-105 duration-300 ease-in-out"
+                            />
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
                 <div className="flex-1">
                     <div className="font-eculid grid grid-cols-[100px_170px_150px_1fr_150px] text-sm text-[#444444] gap-2 px-5 py-5 border-b border-[#B4B4B4]">
