@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import FixedSocialCards from "@/components/general/FixedSocialCards";
 
 const gelica = localFont({
   src: [
@@ -61,6 +62,7 @@ export default function RootLayout({
       <body
         className={`${gelica.variable} ${eculid.variable} font-sans`}
       >
+        <FixedSocialCards />
         {children}
       </body>
     </html>
