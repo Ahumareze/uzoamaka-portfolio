@@ -14,6 +14,7 @@ import Filmography from "./components/filmography/Filmography";
 import Posters from "./components/posters/Posters";
 import { useEffect } from "react";
 
+// @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
 
