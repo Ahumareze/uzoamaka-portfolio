@@ -1,3 +1,5 @@
+import HighlightYears from "./HighlightYears"
+
 export default function Highlights(){
 
     const StatItem = ({number, title, details}: {number: string, title: string, details: string}) => {
@@ -6,7 +8,7 @@ export default function Highlights(){
                 <h1 className="font-gelica text-7xl md:text-[140px] font-bold text-white" data-aos="fade-up">{number}</h1>
                 <div className="mt-5">
                     <p className="text-3xl font-medium text-[#FAFAFA] font-gelica" data-aos="fade-up" data-aos-duration="500">{title}</p>
-                    <p className="text-[#D3D3D3] font-gelica mt-2 font-eculid" data-aos="fade-up" data-aos-duration="500">{details}</p>
+                    <p className="text-[#D3D3D3] mt-2 font-eculid" data-aos="fade-up" data-aos-duration="500">{details}</p>
                 </div>
             </div>
         )
@@ -40,9 +42,9 @@ export default function Highlights(){
                         title="Award Wins"
                         details="Resume - Doings"
                     />
-                    
                 </div>
             </div>
+            <HighlightYears />
         </div>
     )
 }
