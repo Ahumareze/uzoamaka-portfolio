@@ -40,15 +40,15 @@ export default function Filmography(){
                 </div>
                 <p className="max-w-[350px] text-right font-gelica text-[#8E8E8E] text-lg" data-aos="fade-left">'there are years that ask questions and years that answer'~ <span className="text-[#B4B4B4]">zora neale hurston.</span></p>
             </div>
-            <div className="w-full flex items-center gap-10 md:gap-20 mt-10">
-                <div className="w-[420px] flex items-center justify-center">
+            <div className="w-full flex gap-10 md:gap-20 mt-10 relative">
+                <div className="w-[420px] flex items-center justify-center sticky top-5 h-fit">
                     <AnimatePresence>
                         <motion.div 
                             key={selectedIndex}
                             initial={{ scale: 0.8, opacity: 0}}
                             animate={{ scale: 1, opacity: 1}}
                             // exit={{ scale: 0.8, opacity: 0}}
-                            className="h-[450px] min-w-[420px] max-w-[420px] rounded-md flex items-center justify-center relative group cursor-pointer"
+                            className="max-h-[450px] pt-10 min-w-[420px] max-w-[420px] rounded-md flex items-center justify-center relative group cursor-pointer"
                         >
                             <Image
                                 src={movies[selectedIndex]}
