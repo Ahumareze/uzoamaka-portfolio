@@ -39,7 +39,7 @@ export default function Loader(){
     }, {})
 
     return(
-        <div className="w-full h-screen bg-red-500 bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(${loaderBackdrop.src})`}}>
+        <div className="w-full h-screen bg-black bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(${loaderBackdrop.src})`}}>
             <div className='bg-[#222229F5] h-full w-full flex flex-col px-[20px] md:px-[50px] py-[20px]'>
                 {/* top content */}
                 <div className='flex items-center gap-5'>

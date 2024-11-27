@@ -26,7 +26,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="bg-primary-white">
+    <main className="bg-primary-white w-[100vw] overflow-x-hidden">
       {/* <Loader /> */}
       <Header />
       <Hero />
