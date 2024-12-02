@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import FixedSocialCards from "@/components/general/FixedSocialCards";
-import Loader from "@/components/loader/Loader";
+import LoaderContainer from "@/components/container/LoaderContainer";
 
 const gelica = localFont({
   src: [
@@ -46,6 +45,16 @@ const eculid = localFont({
     }
   ],
   variable: '--font-eculid'
+});
+
+const autography = localFont({
+  src: [
+    {
+      path: '../public/fonts/autography.otf',
+      weight: '400'
+    }
+  ],
+  variable: '--font-autography'
 })
 
 export const metadata: Metadata = {
@@ -61,11 +70,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gelica.variable} ${eculid.variable} font-sans`}
+        className={`${gelica.variable} ${eculid.variable} ${autography.variable} font-sans`}
       >
-        {/* <Loader /> */}
-        <FixedSocialCards />
-        {children}
+        <LoaderContainer>
+          {children}
+        </LoaderContainer>
       </body>
     </html>
   );

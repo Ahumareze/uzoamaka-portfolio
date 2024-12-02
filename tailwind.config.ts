@@ -14,7 +14,8 @@ export default {
       },
       fontFamily: {
         gelica: ['var(--font-gelica)'],
-        eculid: ['var(--font-eculid)']
+        eculid: ['var(--font-eculid)'],
+        autography: ['var(--font-autography)']
       }
     },
   },
