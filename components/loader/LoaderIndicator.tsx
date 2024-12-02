@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 
-export default function LoaderIndicator(){
+export default function LoaderIndicator({loaderComplete}:{loaderComplete: () => void}){
 
     useGSAP(() => {
         let tl  = gsap.timeline();
@@ -9,7 +9,8 @@ export default function LoaderIndicator(){
         tl.to('#loader-indicator', {
             width: '100%',
             duration: 10,
-            ease: 'power1.inOut'
+            ease: 'power1.inOut',
+            onComplete: () => loaderComplete()
         })
     }, {})
 

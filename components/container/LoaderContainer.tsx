@@ -11,7 +11,7 @@ export default function LoaderContainer({children}:{children: React.ReactNode}){
 
     return(
         <div className={`${showLoader && 'overflow-hidden h-screen'}`}>
-            {showLoader && <Loader />}
+            {showLoader && <Loader setShowLoader={setShowLoader} />}
             {!showLoader && <FixedSocialCards />}
             {children}
         </div>
