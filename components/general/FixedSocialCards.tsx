@@ -4,6 +4,7 @@ import { FaLinkedin, FaXTwitter } from "react-icons/fa6"
 import { RiInstagramFill } from "react-icons/ri"
 import { SiSubstack } from "react-icons/si"
 import { TbMail } from "react-icons/tb"
+import { motion } from "motion/react"
 
 export default function FixedSocialCards(){
 
@@ -33,7 +34,11 @@ export default function FixedSocialCards(){
 
     return(
         <div className="fixed top-0 left-0 z-[1000] flex items-center h-screen">
-            <div className="">
+            <motion.div 
+                className=""
+                animate={{ x: 0, opacity: 1 }}
+                initial={{ x: -100, opacity: 0}}
+            >
                 <SocialCardItem
                     link='https://www.instagram.com/uzoamaka_a?igsh=OGxjdXJkbnU5ZWhy'
                     title="Instagram"
@@ -59,7 +64,7 @@ export default function FixedSocialCards(){
                     title="Mail"
                     children={<TbMail size={22} />}
                 />
-            </div>
+            </motion.div>
         </div>
     )
 }
