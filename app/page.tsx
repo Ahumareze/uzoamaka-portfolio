@@ -28,7 +28,6 @@ export default function Home() {
   return (
     <main className="bg-primary-white w-[100vw] overflow-x-hidden">
       {/* <Loader /> */}
-      <Header />
       <Hero />
       <div className="w-full px-[20px] md:px-[50px] py-12 bg-primary-white flex gap-10 flex-col lg:flex-row">
         <div className="flex-1">

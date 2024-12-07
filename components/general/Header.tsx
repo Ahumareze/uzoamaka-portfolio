@@ -25,7 +25,7 @@ export default function Header(){
     }, {})
 
     return(
-        <div className="w-full px-[20px] md:px-[50px] py-[30px] flex items-center text-white fixed top-0 left-0">
+        <div className="w-full px-[20px] md:px-[50px] py-[30px] flex items-center text-white fixed top-0 left-0 z-[1000]">
             <div className="md:w-[250px]">
                 <Link href='/' className="flex-wrap">
                     <h1 className="font-autography text-xl md:text-3xl text-white relative top-[-200px]" id="header-title">Uzoamaka Anuoah</h1>

@@ -37,33 +37,35 @@ export default function Loader({setShowLoader}:{setShowLoader: (value: boolean) 
     }
 
     return(
-        <div className="w-full h-screen bg-black bg-center bg-cover bg-no-repeat relative overflow-hidden" id='loader-main-container' style={{backgroundImage: `url(${loaderBackdrop.src})`}}>
-            <div className='bg-[#222229F5] h-full w-full flex flex-col px-[20px] md:px-[50px] py-[20px]'>
-                {/* middle content */}
-                <div className='flex-1 w-full flex flex-col items-center justify-center'>
-                    {/* <Image
-                        src={loadingTextLogo}
-                        alt='loader text'
-                        className='max-h-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
-                        style={{objectFit: "contain"}}
-                    /> */}
-                    <LoaderImage />
-                    <LoaderIndicator loaderComplete={removeLoader} />
-                </div>
-                {/* bottom content */}
-                <div className='flex items-end gap-5'>
-                    <div className='flex-1 space-y-2'>
-                        <div className='flex items-center gap-5 text-white/90 text-lg font-eculid'>
-                            <p>[ACTOR]</p>
-                            <p>[WRITER]</p>
-                            <p>[DIRECTOR]</p>
-                        </div>
-                        <p className='text-white font-semibold text-3xl font-gelica'>Heading To The Oscar</p>
+        <div className='h-screen w-full absolute top-0 z-[1000]'>
+            <div className="w-full h-screen bg-black bg-center bg-cover bg-no-repeat relative overflow-hidden" id='loader-main-container' style={{backgroundImage: `url(${loaderBackdrop.src})`}}>
+                <div className='bg-[#222229F5] h-full w-full flex flex-col px-[20px] md:px-[50px] py-[20px]'>
+                    {/* middle content */}
+                    <div className='flex-1 w-full flex flex-col items-center justify-center'>
+                        {/* <Image
+                            src={loadingTextLogo}
+                            alt='loader text'
+                            className='max-h-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
+                            style={{objectFit: "contain"}}
+                        /> */}
+                        <LoaderImage />
+                        <LoaderIndicator loaderComplete={removeLoader} />
                     </div>
-                    <div className='flex-1 flex items-center justify-end gap-2'>
-                        {[1,2,3].map(i => (
-                            <div className='h-[20px] w-[10px] bg-white' />
-                        ))}
+                    {/* bottom content */}
+                    <div className='flex items-end gap-5'>
+                        <div className='flex-1 space-y-2'>
+                            <div className='flex items-center gap-5 text-white/90 text-lg font-eculid'>
+                                <p>[ACTOR]</p>
+                                <p>[WRITER]</p>
+                                <p>[DIRECTOR]</p>
+                            </div>
+                            <p className='text-white font-semibold text-3xl font-gelica'>Heading To The Oscar</p>
+                        </div>
+                        <div className='flex-1 flex items-center justify-end gap-2'>
+                            {[1,2,3].map(i => (
+                                <div className='h-[20px] w-[10px] bg-white' />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
