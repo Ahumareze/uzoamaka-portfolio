@@ -9,7 +9,7 @@ export default function Header(){
 
         tl.to('#header-title', {
             top: 0,
-            delay: 7,
+            delay: 8.5,
             ease: 'power1.inOut',
             duration: 0.8
         });

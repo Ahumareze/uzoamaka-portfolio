@@ -8,6 +8,7 @@ import gsap from 'gsap';
 import logoMain from '@/assets/icons/logo-main.png';
 import LoaderIndicator from './LoaderIndicator';
 import LoaderImage from './LoaderImage';
+import { useGSAP } from '@gsap/react';
 
 export default function Loader({setShowLoader}:{setShowLoader: (value: boolean) => void}){
     const [animateLogo, setAnimateLogo] = useState(true);
@@ -33,8 +34,19 @@ export default function Loader({setShowLoader}:{setShowLoader: (value: boolean) 
             ease: 'power1.inOut',
             onComplete: () => setShowLoader(false),
         })
+    };
 
-    }
+    useGSAP(() => {
+        let tl  = gsap.timeline();
+
+        tl.to('#loader-block', {
+            opacity: 1,
+            stagger: 1,
+            duration: 10,
+            ease: 'power1.inOut',
+            onComplete: () => removeLoader()
+        })
+    }, {})
 
     return(
         <div className='h-screen w-full absolute top-0 z-[1000]'>
@@ -49,7 +61,7 @@ export default function Loader({setShowLoader}:{setShowLoader: (value: boolean) 
                             style={{objectFit: "contain"}}
                         /> */}
                         <LoaderImage />
-                        <LoaderIndicator loaderComplete={removeLoader} />
+                        {/* <LoaderIndicator loaderComplete={removeLoader} /> */}
                     </div>
                     {/* bottom content */}
                     <div className='flex items-end gap-5'>
@@ -61,9 +73,9 @@ export default function Loader({setShowLoader}:{setShowLoader: (value: boolean) 
                             </div>
                             <p className='text-white font-semibold text-3xl font-gelica'>Heading To The Oscar</p>
                         </div>
-                        <div className='flex-1 flex items-center justify-end gap-2'>
+                        <div className='flex items-center justify-end gap-2 w-[60px] overflow-hidden'>
                             {[1,2,3].map(i => (
-                                <div className='h-[20px] w-[10px] bg-white' />
+                                <div className='h-[25px] w-[13px] bg-white opacity-5' id='loader-block' key={i} />
                             ))}
                         </div>
                     </div>

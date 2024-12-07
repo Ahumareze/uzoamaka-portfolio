@@ -10,8 +10,8 @@ export default function LoaderImage(){
         let tl1 = gsap.timeline();
 
         tl1.to('#loader-text-animation', {
-            delay: 7,
-            duration: 2,
+            delay: 8.5,
+            duration: 1.5,
             ease: "power1.inOut",
             top: 500,
         })
