@@ -1,6 +1,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Link from "next/link";
+import menuIcon from '@/assets/icons/menu-icon.svg';
+import Image from "next/image";
 
 export default function Header(){
 
@@ -38,7 +40,10 @@ export default function Header(){
                 <p className="cursor-pointer top-[50px] opacity-0 relative" id="header-nav-item">HIGHLIGHTS</p>
             </div>
             <div className="md:w-[250px] flex items-center justify-end">
-                <p className="font-eculid font-medium cursor-pointer text-lg top-[50px] opacity-0 relative" id="header-nav-item">Menu</p>
+                <div className="flex items-center justify-end gap-2 cursor-pointer top-[50px] opacity-0 relative" id="header-nav-item">
+                    <p className="font-eculid font-medium text-lg">Menu</p>
+                    <Image src={menuIcon} alt="" className="h-[28px] w-[47px]" />
+                </div>
             </div>
         </div>
     )
