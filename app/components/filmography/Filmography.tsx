@@ -34,7 +34,7 @@ export default function Filmography(){
                 <div className="flex-1 space-y-2">
                     <div className="flex items-center gap-3">
                         <div className='h-[10px] w-[10px] rounded-full bg-[#696969]' />
-                        <p className='text-[#696969] text-xl'>Appearances</p>
+                        <p className='text-[#696969] text-xl font-gelica'>Appearances</p>
                     </div>
                     <h1 className="text-3xl md:text-[55px] font-bold text-[#444444] font-gelica leading-[120%]" data-aos="fade-up">UZOAMAKA'S FILMOGRAPHY</h1>
                 </div>

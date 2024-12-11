@@ -50,7 +50,7 @@ export default function Biography(){
             <div className='flex-1 bg-[#F8F3F2] overflow-hidden' style={{ height: `calc(100vh + 200px)` }}>
                 <div className='flex items-center gap-3 pt-10 px-10'>
                     <div className='h-[10px] w-[10px] rounded-full bg-[#696969]' />
-                    <p className='text-[#696969] text-xl'>Biography</p>
+                    <p className='text-[#696969] text-xl font-gelica'>Biography</p>
                 </div>
                 <div>
                     <div className='pt-5 px-10 h-screen' id='earlyLife'>
