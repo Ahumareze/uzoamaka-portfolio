@@ -29,7 +29,7 @@ export default function Home() {
     <main className="bg-primary-white w-[100vw] overflow-x-hidden">
       {/* <Loader /> */}
       <Hero />
-      <div className="w-full px-[20px] md:px-[50px] py-12 bg-primary-white flex gap-10 flex-col lg:flex-row">
+      <section className="w-full px-[20px] md:px-[50px] py-20 bg-primary-white flex gap-10 flex-col lg:flex-row" id="profile">
         <div className="flex-1">
           <p className="max-w-[550px] text-lg leading-[140%] font-gelica" data-aos="fade-up">Uzoamaka Aniunoh is a vibrant and dynamic Nigerian actor, writer and director, renowned for her captivating presence on digital platforms.</p>
         </div>
@@ -37,7 +37,7 @@ export default function Home() {
           <p className="text-xl font-extrabold font-gelica">HELLOUZOAMAKA<span className="font-inter">@</span>GMAIL.COM</p>
           <FaArrowRight size={25} />
         </div>
-      </div>
+      </section>
       <Biography />
       <div className="w-full h-screen p-20">
         <YoutubeVideo />

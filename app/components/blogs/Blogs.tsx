@@ -6,7 +6,7 @@ import classes from './styles.module.css';
 
 export default function Blogs(){
     return(
-        <div className="w-[100vw] space-y-10 pb-10 md:pb-20 overflow-x-hidden">
+        <div className="w-[100vw] space-y-10 py-10 md:py-20 overflow-x-hidden" id="blogs">
             <div className="flex flex-col md:flex-row items-center gap-5 px-[20px] md:px-[50px]">
                 <div className="flex-1 space-y-2">
                     <div className="flex items-center gap-3">

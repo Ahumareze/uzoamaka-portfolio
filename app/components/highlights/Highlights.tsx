@@ -15,7 +15,7 @@ export default function Highlights(){
     }
 
     return(
-        <div className="w-full min-h-screen bg-[#2d2d33] py-10 md:py-20">
+        <section className="w-full min-h-screen bg-[#2d2d33] py-10 md:py-20" id="highlights">
             <div className="px-[20px] md:px-[50px]">
                 <div className="flex items-center gap-3">
                     <div className='h-[10px] w-[10px] rounded-full bg-[#D3D3D3]' />
@@ -45,6 +45,6 @@ export default function Highlights(){
                 </div>
             </div>
             <HighlightYears />
-        </div>
+        </section>
     )
 }

@@ -49,7 +49,7 @@ export default function Loader({setShowLoader}:{setShowLoader: (value: boolean) 
     }, {})
 
     return(
-        <div className='h-screen w-full absolute top-0 z-[1000]'>
+        <div className='h-screen w-full absolute top-0 z-[1000] bg-[#2d2d33]'>
             <div className="w-full h-screen bg-black bg-center bg-cover bg-no-repeat relative overflow-hidden" id='loader-main-container' style={{backgroundImage: `url(${loaderBackdrop.src})`}}>
                 <div className='bg-[#222229F5] h-full w-full flex flex-col px-[20px] md:px-[50px] py-[20px]'>
                     {/* middle content */}

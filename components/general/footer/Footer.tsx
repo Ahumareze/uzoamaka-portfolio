@@ -26,7 +26,7 @@ export default function Footer(){
     }
 
     return(
-        <div className="w-full px-[20px] md:px-[50px] bg-primary-white">
+        <section className="w-full px-[20px] md:px-[50px] bg-primary-white">
             <div className="flex items-center">
                 <div className="flex-1 flex items-center">
                     <Link href={'mailto:hellouzoamaka@gmail.com'} target="_blank">
@@ -58,6 +58,6 @@ export default function Footer(){
                 </div>
                 <p className="text-sm text-[#696969] fobt-eculid">© 2024 All Rights Reserved. All beauty to Uzoamaka.</p>
             </div>
-        </div>
+        </section>
     )
 }

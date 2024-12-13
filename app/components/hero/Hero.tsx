@@ -20,9 +20,8 @@ export default function Hero(){
     }
     
     return(
-        <div className='h-screen relative'>
+        <section className='h-screen relative'>
             <HeroBackdrop />
-
             <div className="h-screen overflow-hidden w-full bg-center bg-cover bg-no-repeat flex gap-10 px-[20px] md:px-[50px] absolute top-0">
                 <div className='flex-1 flex items-end h-full overflow-hidden py-[20px]'>
                     <h1 className='text-primary-white text-5xl md:text-7xl lg:text-9xl font-extrabold m-0 p-0 font-gelica' data-aos="fade-up">UZOAMAKA<br />ANIUNOH.</h1>
@@ -41,6 +40,6 @@ export default function Hero(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

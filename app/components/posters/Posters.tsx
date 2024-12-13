@@ -25,7 +25,7 @@ import venge from '@/assets/images/posters/venge.JPG';
 
 export default function Posters(){
     return(
-        <div className="min-h-screen w-[100vw] bg-[#2d2d33] flex flex-col items-center justify-center overflow-hidden py-20 overflow-hidden">
+        <section className="min-h-screen w-[100vw] bg-[#2d2d33] flex flex-col items-center justify-center overflow-hidden py-20 overflow-hidden">
             {/* top contents */}
             <div className='grid grid-cols-[250px_250px_250px_250px_250px] w-full items-center justify-center'>
                 <div className='relative h-[350px] w-[350px]'>
@@ -172,6 +172,6 @@ export default function Posters(){
                     />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

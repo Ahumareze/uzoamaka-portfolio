@@ -29,7 +29,7 @@ export default function Filmography(){
     const [selectedIndex, setSelectedIndex] = useState<number>(0);
 
     return(
-        <div className="w-full min-h-screen bg-primary-white px-[20px] md:px-[50px] py-10 md:py-20">
+        <section className="w-full min-h-screen bg-primary-white px-[20px] md:px-[50px] py-10 md:py-20" id="films">
             <div className="flex items-center gap-5">
                 <div className="flex-1 space-y-2">
                     <div className="flex items-center gap-3">
@@ -88,6 +88,6 @@ export default function Filmography(){
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
