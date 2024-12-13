@@ -8,6 +8,7 @@ import hero5 from '@/assets/images/hero-images/hero-5.png';
 import hero6 from '@/assets/images/hero-images/hero-6.png';
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react"
+import { useLoaderStore } from "@/store/LoaderStore";
 
 const images : StaticImageData[] = [
     hero1,
@@ -19,18 +20,23 @@ const images : StaticImageData[] = [
 ]
 
 export default function HeroBackdrop(){
+    const { showLoader } = useLoaderStore();
     const [currentIndex, setCurrentIndex] = useState<number>(0);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevCount) => (prevCount === 5 ? 0 : prevCount + 1));
-        }, 5000);
-    
-        return () => clearInterval(interval); // Cleanup on unmount
-    }, []);
+        if(!showLoader){
+            const interval = setInterval(() => {
+                setCurrentIndex((prevCount) => (prevCount === 5 ? 0 : prevCount + 1));
+            }, 5000);
+        
+            return () => clearInterval(interval); // Cleanup on unmount
+        };
+
+        return
+    }, [showLoader]);
 
     return(
-        <div className='h-screen w-full bg-[#d6c7c4] relative'>
+        <div className='h-screen w-full bg-primary-white relative'>
             <AnimatePresence>
             <motion.div
                 key={currentIndex}
