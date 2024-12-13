@@ -22,13 +22,9 @@ export default function HeroBackdrop(){
     const [currentIndex, setCurrentIndex] = useState<number>(0);
 
     useEffect(() => {
-        console.log(currentIndex)
-    }, [currentIndex])
-
-    useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevCount) => (prevCount === 5 ? 0 : prevCount + 1));
-        }, 4000);
+        }, 5000);
     
         return () => clearInterval(interval); // Cleanup on unmount
     }, []);

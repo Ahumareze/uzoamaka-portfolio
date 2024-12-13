@@ -53,10 +53,10 @@ export default function Footer(){
                 </div>
             </div>
             <div className="border-t border-[#B4B4B4] w-full flex items-center py-10">
-                <div className="flex-1 text-sm text-[#696969]">
+                <div className="flex-1 text-sm text-[#696969] font-eculid">
                     <Link href={'/'} target="_blank" className="underline">Adesewa</Link> served Design, <Link href={'/'} target="_blank" className="underline">Gideon</Link> served motion, <Link href={'/'} target="_blank" className="underline">Ifeanyi</Link> served code.🍽️
                 </div>
-                <p className="text-sm text-[#696969]">© 2024 All Rights Reserved. All beauty to Uzoamaka.</p>
+                <p className="text-sm text-[#696969] fobt-eculid">© 2024 All Rights Reserved. All beauty to Uzoamaka.</p>
             </div>
         </div>
     )
