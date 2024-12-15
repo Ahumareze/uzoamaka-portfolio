@@ -9,7 +9,7 @@ export default function NewsLetter(){
     useEffect(() => {
         setTimeout(() => {
             setShowNewsLetter(true)
-        }, 10000);
+        }, 15000);
     }, [])
 
     if(showNewsLetter)
