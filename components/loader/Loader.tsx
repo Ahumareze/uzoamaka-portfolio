@@ -50,7 +50,7 @@ export default function Loader({setShowLoader}:{setShowLoader: (value: boolean) 
 
     return(
         <div className='h-screen w-full absolute top-0 z-[1000] bg-transparent'>
-            <div className="w-full h-screen bg-black bg-center bg-cover bg-no-repeat relative overflow-hidden" id='loader-main-container' style={{backgroundImage: `url(${loaderBackdrop.src})`}}>
+            <div className="w-full h-screen bg-primary-black bg-center bg-cover bg-no-repeat relative overflow-hidden" id='loader-main-container' style={{backgroundImage: `url(${loaderBackdrop.src})`}}>
                 <div className='bg-[#222229F5] h-full w-full flex flex-col px-[20px] md:px-[50px] py-[20px]'>
                     {/* middle content */}
                     <div className='flex-1 w-full flex flex-col items-center justify-center'>
@@ -71,7 +71,7 @@ export default function Loader({setShowLoader}:{setShowLoader: (value: boolean) 
                                 <p>[WRITER]</p>
                                 <p>[DIRECTOR]</p>
                             </div>
-                            <p className='text-white font-semibold text-3xl font-gelica'>Heading To The Oscar</p>
+                            <p className='text-white font-semibold text-3xl font-gelica'>HEADING TO THE OSCARS!</p>
                         </div>
                         <div className='flex items-center justify-end gap-2 w-[60px] overflow-hidden'>
                             {[1,2,3].map(i => (

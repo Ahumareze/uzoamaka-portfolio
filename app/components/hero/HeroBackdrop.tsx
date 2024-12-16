@@ -8,7 +8,7 @@ import hero5 from '@/assets/images/hero-images/hero-5.png';
 import hero6 from '@/assets/images/hero-images/hero-6.png';
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react"
-import { useLoaderStore } from "@/store/LoaderStore";
+import { useGeneralStore } from "@/store/generalStore";
 
 const images : StaticImageData[] = [
     hero1,
@@ -20,7 +20,7 @@ const images : StaticImageData[] = [
 ]
 
 export default function HeroBackdrop(){
-    const { showLoader } = useLoaderStore();
+    const { showLoader } = useGeneralStore();
     const [currentIndex, setCurrentIndex] = useState<number>(0);
 
     useEffect(() => {

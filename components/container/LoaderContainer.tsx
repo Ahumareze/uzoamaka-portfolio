@@ -3,17 +3,19 @@
 import React from "react";
 import FixedSocialCards from "../general/FixedSocialCards";
 import Loader from "../loader/Loader";
-import { useLoaderStore } from "@/store/LoaderStore";
+import { useGeneralStore } from "@/store/generalStore";
 import Header from "../general/Header";
 import NewsLetter from "../newsLetter/NewsLetter";
+import Menu from "./Menu";
 
 export default function LoaderContainer({children}:{children: React.ReactNode}){
 
-    const { showLoader, setShowLoader } = useLoaderStore();
+    const { showLoader, setShowLoader, showHeader } = useGeneralStore();
 
     return(
-        <div className={`${showLoader && 'overflow-hidden h-screen'}`}>
+        <div className={`${(showLoader || showHeader) && 'overflow-hidden h-screen'}`}>
             {showLoader && <Loader setShowLoader={setShowLoader} />}
+            {showHeader && <Menu />}
             <Header />
             {!showLoader && <NewsLetter />}
             {!showLoader && <FixedSocialCards />}
