@@ -12,11 +12,11 @@ import { useLoaderStore } from "@/store/LoaderStore";
 
 const images : StaticImageData[] = [
     hero1,
-    hero2,
-    hero3,
     hero4,
+    hero2,
     hero5,
-    hero6
+    hero6,
+    hero3,
 ]
 
 export default function HeroBackdrop(){

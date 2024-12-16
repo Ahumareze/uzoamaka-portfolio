@@ -75,7 +75,7 @@ export default function Biography(){
                         </div>
                     </div>
                     {/* wins */}
-                    <div className='w-full h-screen bg-[#EEE1DD] rounded-t-[60px] border-8 border-white p-10 relative' id='wins'>
+                    <div className='w-full bg-[#EEE1DD] rounded-t-[60px] border-8 border-white p-10 relative' id='wins' style={{ height: `calc(100vh + 200px)` }}>
                         <h1 className='font-gelica text-5xl font-bold text-[#444444]'>Wins, Directing...</h1>
                         <div className='space-y-7 mt-5 text-base md:text-lg text-[#444444] font-eculid'>
                             <p>Aniunoh's acting career has been marked by notable successes. She received the <span className='font-medium'>Kim Renders Memorial Award</span> for Outstanding Performance from the <span className='font-medium'>Reelout Film Festival</span> in 2021 for her role in the LGBT love story "Ife."</p>

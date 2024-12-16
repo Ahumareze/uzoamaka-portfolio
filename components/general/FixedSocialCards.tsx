@@ -16,10 +16,10 @@ export default function FixedSocialCards(){
                 <div className="h-[58px] hover:h-fit hover:py-2 w-[58px] flex items-center justify-center cursor-pointer bg-primary-white text-primary-black group hover:bg-primary-black hover:text-primary-white duration-300 ease-in-out">
                     <div className="group-hover:hidden">{children}</div>
 
-                    <div className="hidden group-hover:flex items-center justify-center flex-col gap-0">
-                        {titleArr.map((item, index) => (
+                    <div className="hidden group-hover:flex items-center justify-center flex-col gap-[-2px]">
+                        {titleArr.reverse().map((item, index) => (
                             <p 
-                                className="text-white capitalize text-sm font-gelica font-extrabold" 
+                                className="text-white capitalize text-sm font-gelica font-extrabold rotate-[-90deg]" 
                                 key={index}
                             >
                                 {item}
