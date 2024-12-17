@@ -5,8 +5,8 @@ import menuIcon from '@/assets/icons/menu-icon.svg';
 import Image from "next/image";
 import { useGeneralStore } from "@/store/generalStore";
 
-export default function Header(){
-    const { showHeader, setShowHeader } = useGeneralStore();
+export default function Header({handleMenuClick}:{handleMenuClick: (event: boolean) => void}){
+    const { showHeader } = useGeneralStore();
 
     useGSAP(() => {
         let tl = gsap.timeline();
@@ -43,7 +43,7 @@ export default function Header(){
                 <Link href='#films' className="flex-wrap"><p className="cursor-pointer top-[50px] opacity-0 relative" id="header-nav-item">FILMS</p></Link> */}
             </div>
             <div className="md:w-[250px] flex items-center justify-end">
-                <div className="flex items-center justify-end gap-2 cursor-pointer top-[50px] opacity-0 relative" id="header-nav-item" onClick={() => setShowHeader(!showHeader)}>
+                <div className="flex items-center justify-end gap-2 cursor-pointer top-[50px] opacity-0 relative" id="header-nav-item" onClick={() => handleMenuClick(!showHeader)}>
                     <p className="font-eculid font-medium text-lg drop-shadow-[0_0_1px_black]">Menu</p>
                     <Image src={menuIcon} alt="" className="h-[28px] w-[47px] drop-shadow-[0_0_1px_black]" />
                 </div>
