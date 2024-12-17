@@ -2,8 +2,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Link from "next/link";
 import menuIcon from '@/assets/icons/menu-icon.svg';
+import menuClose from '@/assets/icons/menu-close.svg';
 import Image from "next/image";
 import { useGeneralStore } from "@/store/generalStore";
+import { AnimatePresence, motion } from 'motion/react'
 
 export default function Header({handleMenuClick}:{handleMenuClick: (event: boolean) => void}){
     const { showHeader } = useGeneralStore();
@@ -43,9 +45,30 @@ export default function Header({handleMenuClick}:{handleMenuClick: (event: boole
                 <Link href='#films' className="flex-wrap"><p className="cursor-pointer top-[50px] opacity-0 relative" id="header-nav-item">FILMS</p></Link> */}
             </div>
             <div className="md:w-[250px] flex items-center justify-end">
-                <div className="flex items-center justify-end gap-2 cursor-pointer top-[50px] opacity-0 relative" id="header-nav-item" onClick={() => handleMenuClick(!showHeader)}>
-                    <p className="font-eculid font-medium text-lg drop-shadow-[0_0_1px_black]">Menu</p>
-                    <Image src={menuIcon} alt="" className="h-[28px] w-[47px] drop-shadow-[0_0_1px_black]" />
+                <div className="top-[50px] opacity-0 relative" id="header-nav-item">
+                    <AnimatePresence>
+                        {!showHeader ?
+                            <motion.div 
+                                initial={{scale: 0.8, opacity: 0.5}}
+                                animate={{scale: 1, opacity: 1}}
+                                className="flex items-center justify-end gap-2 cursor-pointer" 
+                                onClick={() => handleMenuClick(!showHeader)}
+                            >
+                                <p className="font-eculid font-medium text-lg drop-shadow-[0_0_1px_black]">Menu</p>
+                                <Image src={menuIcon} alt="" className="h-[28px] w-[47px] drop-shadow-[0_0_1px_black]" />
+                            </motion.div>
+                            :
+                            <motion.div 
+                                initial={{scale: 0.8, opacity: 0.5}}
+                                animate={{scale: 1, opacity: 1}}
+                                className="flex items-center justify-end gap-2 cursor-pointer" 
+                                onClick={() => handleMenuClick(!showHeader)}
+                            >
+                                <p className="font-eculid font-medium text-lg drop-shadow-[0_0_1px_black]">Close</p>
+                                <Image src={menuClose} alt="" className="h-[28px] w-[47px] drop-shadow-[0_0_1px_black]" />
+                            </motion.div>
+                        }
+                    </AnimatePresence>
                 </div>
             </div>
         </div>

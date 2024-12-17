@@ -36,6 +36,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale scale-90 hover:scale-110 hover:z-[100] rotate-[-10deg] hover:rotate-[-4deg] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -45,6 +46,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale rotate-[5deg] hover:rotate-0 hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -54,6 +56,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale hover:scale-110 hover:rotate-3 hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -63,6 +66,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale hover:rotate-[6deg] hover:scale-110 hover:z-[100] hover:grayscale-0 rotate-[15deg] duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -72,6 +76,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale hover:z-[100] hover:grayscale-0 rotate-[-5deg] hover:rotate-0 hover:scale-110 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -85,6 +90,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale scale-80 rotate-[10deg] hover:rotate-[5deg] hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -94,6 +100,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale scale-110 hover:scale-125 rotate-[-7deg] hover:rotate-0 hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -103,6 +110,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale scale-110 hover:scale-125 hover:rotate-3 hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -112,6 +120,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale scale-90 rotate-[-7deg] hover:rotate-[-3deg] hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -121,6 +130,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale rotate-[10deg] hover:rotate-[4deg] hover:scale-110 hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -134,6 +144,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale rotate-[-2deg] hover:rotate-[4deg] hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -143,6 +154,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale rotate-[-2deg] hover:rotate-[4deg] hover:scale-125 hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -152,6 +164,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale rotate-[-2deg] hover:rotate-[4deg] hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -161,6 +174,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale rotate-[10deg] hover:rotate-[4deg] hover:scale-125 hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>
@@ -170,6 +184,7 @@ export default function Posters(){
                             alt='quite moday movie poster'
                             objectFit='contain'
                             layout='fill'
+                            style={{borderRadius: 10}}
                             className='grayscale rotate-[-12deg] hover:rotate-[-6deg] hover:scale-110 hover:z-[100] hover:grayscale-0 duration-300 ease-in-out hover:scale-105 rounded-lg'
                         />
                     </div>

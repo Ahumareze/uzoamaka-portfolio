@@ -11,7 +11,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useGeneralStore } from "@/store/generalStore";
 import Link from "next/link";
-// import { useRouter } from "next/router";
+import noiseLayer from '@/assets/images/noise-layer.png';
 
 
 const links: {title: string, id: string, image: StaticImageData}[] = [
@@ -38,7 +38,6 @@ const links: {title: string, id: string, image: StaticImageData}[] = [
 ]
 
 export default function Menu({closeMenu}: {closeMenu: boolean}){
-    // const router = useRouter()
     const [selected, setSelected] = useState<number | null>(null);
 
     const { setShowHeader } = useGeneralStore();
@@ -90,13 +89,13 @@ export default function Menu({closeMenu}: {closeMenu: boolean}){
         })
     };
 
-    const handleSelect = (id: string) => {
+    const handleSelect = () => {
         closeAnimation()
     }
 
     return(
         <div className='h-screen w-full fixed top-0 z-[1002] bg-transparent'>
-            <div className="h-0 w-full bg-primary-black px-[40px] md:px-10 pt-[100px] pb-5 flex flex-col box-border overflow-hidden relative" id="menu-main-container">
+            <div className="h-0 w-full bg-primary-black px-[40px] md:px-10 pt-[100px] pb-5 flex flex-col box-border overflow-hidden relative bg-center bg-cover bg-no-repeat" id="menu-main-container" style={{backgroundImage: `url(${noiseLayer.src})`}}>
                 <div className="flex flex-wrap gap-2 text-primary-white font-extrabold text-3xl md:text-9xl font-gelica gap-5">
                     {links.map(({
                         title, 
@@ -106,7 +105,7 @@ export default function Menu({closeMenu}: {closeMenu: boolean}){
                             <Link
                                 className={`cursor-pointer  ${(selected === index || selected === null) ? 'opacity-100' : 'opacity-20'}`}
                                 onMouseEnter={() => setSelected(index)}
-                                onClick={() => handleSelect(id)}
+                                onClick={handleSelect}
                                 href={id}
                             >
                                 {title}
@@ -136,6 +135,7 @@ export default function Menu({closeMenu}: {closeMenu: boolean}){
                                         alt=""
                                         className="w-[300px] relative"
                                         id="menu-link"
+                                        style={{borderRadius: 10}}
                                     />
                                 </motion.div>
                             </AnimatePresence>
