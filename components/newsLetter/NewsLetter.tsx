@@ -26,7 +26,7 @@ export default function NewsLetter(){
 
     if(showNewsLetter)
     return(
-        <div className="h-screen w-full bg-black/70 fixed top-0 left-0 z-[1001] pt-5 box-border px-5">
+        <div className="h-screen w-full bg-black/70 fixed top-0 left-0 z-[1005] pt-5 box-border px-5">
             <motion.div 
                 className="max-w-[1000px] rounded-2xl bg-primary-black px-5 py-5 mx-auto relative"
                 animate={{scale: 1, opacity: 1, top: 0, transition: { duration: 0.5 }}}
