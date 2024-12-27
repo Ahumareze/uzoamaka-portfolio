@@ -1,4 +1,4 @@
-import HighlightYears from "./HighlightYears";
+import HighlightsComponent from "@/components/highlights/Highlights";
 import noiseLayer from '@/assets/images/noise-layer.png';
 
 export default function Highlights(){
@@ -46,7 +46,7 @@ export default function Highlights(){
                         />
                     </div>
                 </div>
-                <HighlightYears />
+                <HighlightsComponent />
             </div>
         </section>
     )
