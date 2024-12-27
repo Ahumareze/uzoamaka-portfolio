@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   images:{
     domains: ['res.cloudinary.com'],
-    formats: ['image/avif', 'image/webp', 'image/webp'],
+    formats: ['image/avif', 'image/webp'],
   }
 };
 
