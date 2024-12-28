@@ -12,11 +12,12 @@ import the_weekend from '@/assets/images/posters/the_weekend.jpg';
 import phoenix_fury from '@/assets/images/posters/phoenix_fury.jpg';
 import headless from '@/assets/images/posters/headless.jpg';
 
-/* eslint-disable */
+//@ts-ignore
 import love_notes from '@/assets/images/posters/love_notes.JPG';
+//@ts-ignore
 import diche from '@/assets/images/posters/diche.JPG';
+//@ts-ignore
 import ife from '@/assets/images/posters/ife.JPG';
-/* eslint-enable */
 
 import mami_wata from '@/assets/images/posters/mami_wata.jpg';
 import domi from '@/assets/images/posters/domi.jpg';
