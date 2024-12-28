@@ -26,7 +26,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="bg-primary-white w-[100vw] overflow-x-hidden">
+    <main className="bg-primary-white w-[100vw]">
       {/* <Loader /> */}
       <Hero />
       <section className="w-full px-[20px] md:px-[50px] py-20 bg-primary-white flex gap-10 flex-col lg:flex-row" id="profile">

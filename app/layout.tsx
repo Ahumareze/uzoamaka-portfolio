@@ -70,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gelica.variable} ${eculid.variable} ${autography.variable} font-sans`}
+        className={`${gelica.variable} ${eculid.variable} ${autography.variable} font-sans bg-primary-white`}
       >
         <LoaderContainer>
           {children}

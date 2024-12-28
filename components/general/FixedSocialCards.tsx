@@ -5,7 +5,8 @@ import { RiInstagramFill } from "react-icons/ri"
 import { SiSubstack } from "react-icons/si"
 import { TbMail } from "react-icons/tb"
 import { motion } from "motion/react"
-
+import classes from './style.module.css'
+;
 export default function FixedSocialCards(){
 
     const SocialCardItem = ({children, link, title}:{children: React.ReactNode, link: string, title: string}) => {
@@ -13,13 +14,13 @@ export default function FixedSocialCards(){
 
         return(
             <Link href={link} target="_blank">
-                <div className="h-[58px] hover:h-fit hover:py-2 w-[58px] flex items-center justify-center cursor-pointer bg-primary-white text-primary-black group hover:bg-primary-black hover:text-primary-white duration-300 ease-in-out">
+                <div className="h-[58px] hover:h-fit hover:py-2 w-[58px] flex items-center justify-center cursor-pointer bg-primary-white text-primary-black group hover:bg-[#010101] duration-300 ease-in-out">
                     <div className="group-hover:hidden">{children}</div>
 
                     <div className="hidden group-hover:flex items-center justify-center flex-col gap-[-2px]">
                         {titleArr.reverse().map((item, index) => (
                             <p 
-                                className="text-white capitalize text-sm font-gelica font-extrabold rotate-[-90deg]" 
+                                className={`text-primary-white capitalize text-sm font-gelica font-extrabold rotate-[-90deg] ${classes.socialCardText}`}
                                 key={index}
                             >
                                 {item}

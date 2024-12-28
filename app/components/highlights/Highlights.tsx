@@ -16,7 +16,7 @@ export default function Highlights(){
     }
 
     return(
-        <section className="w-full min-h-screen bg-[#2d2d33]" id="highlights">
+        <section className="w-[100vw] overflow-x-hidden min-h-screen bg-[#2d2d33] " id="highlights">
             <div className="w-full py-10 md:py-20 bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(${noiseLayer.src})`}}>
                 <div className="px-[20px] md:px-[50px]">
                     <div className="flex items-center gap-3">
@@ -26,7 +26,7 @@ export default function Highlights(){
                     <h3 className="text-4xl font-gelica text-[#F1F1F1] mt-3 font-base" data-aos="fade-up">At first, uzoamaka’s interests were in telling simple stories that mirror her world. with an intent to explore acting in the future. </h3>
                     <div className="flex items-center gap-5 mt-5">
                         <div className="flex-1 h-[1px] bg-[#8B8B8B]" />
-                        <p className="text-[#8B8B8B] max-w-[280px] text-right text-xl" data-aos="fade-left">Her love for nollywood has led to her boasting...</p>
+                        <p className="text-[#8B8B8B] max-w-[280px] text-right text-xl font-eculid" data-aos="fade-left">Her love for nollywood has led to her boasting...</p>
                     </div>
                     <div className="flex items-center gap-10 md:gap-20 mt-10">
                         <StatItem

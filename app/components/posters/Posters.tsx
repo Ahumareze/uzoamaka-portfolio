@@ -26,7 +26,7 @@ import noiseLayer from '@/assets/images/noise-layer.png';
 
 export default function Posters(){
     return(
-        <section className='min-h-screen w-[100vw] bg-[#2d2d33]'>
+        <section className='min-h-screen w-[100vw] bg-[#2d2d33] overflow-x-hidden'>
             <div className="w-full flex flex-col items-center justify-center overflow-hidden py-20 overflow-hidden bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(${noiseLayer.src})`}}>
                 {/* top contents */}
                 <div className='grid grid-cols-[250px_250px_250px_250px_250px] w-full items-center justify-center'>
