@@ -13,3 +13,22 @@
     top: 0%;
   }
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .scroll_container {
+    animation: slide-horizontal 30s linear infinite;
+  }
+
+  @keyframes slide-horizontal {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: -100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+}
