@@ -1,5 +1,6 @@
 "use client"
 import biographyImage from '@/assets/images/biographyImage.png';
+import mobileBiographyImage from '@/assets/images/mobileBiographyImage.png';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
@@ -39,12 +40,17 @@ export default function Biography(){
     }, {scope: containerRef})
 
     return(
-        <div className="w-full flex relative " style={{ height: `calc(100vh + 200px)` }}  ref={containerRef}>
-            <div className='w-[550px] sticky top-0 h-fit'>
+        <div className="w-full md:flex relative md:h-screen md:overflow-hidden overflow-x-hidden" ref={containerRef}>
+            <div className='w-full md:w-[550px] md:sticky top-0 h-fit'>
                 <Image
                     src={biographyImage}
                     alt='uzoamaka aniunoh'
-                    className='w-full'
+                    className='w-full hidden md:flex'
+                />
+                <Image
+                    src={mobileBiographyImage}
+                    alt='uzoamaka aniunoh'
+                    className='w-full md:hidden'
                 />
             </div>
             <div className='flex-1 bg-[#F8F3F2] overflow-hidden' style={{ height: `calc(100vh + 200px)` }}>
