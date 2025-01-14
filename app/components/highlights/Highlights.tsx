@@ -25,8 +25,8 @@ export default function Highlights(){
                     </div>
                     <h3 className="text-4xl font-gelica text-[#F1F1F1] mt-3 font-base" data-aos="fade-up">At first, uzoamaka’s interests were in telling simple stories that mirror her world. with an intent to explore acting in the future. </h3>
                     <div className="flex items-center gap-5 mt-5">
-                        <div className="flex-1 h-[1px] bg-[#8B8B8B]" />
-                        <p className="text-[#8B8B8B] max-w-[280px] text-right text-xl font-eculid" data-aos="fade-left">Her love for nollywood has led to her boasting...</p>
+                        <div className="flex-1 h-[1px] bg-[#8B8B8B] hidden md:flex" />
+                        <p className="text-[#8B8B8B] md:max-w-[280px] text-right text-xl font-eculid" data-aos="fade-left">Her love for nollywood has led to her boasting...</p>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-20 mt-10">
                         <StatItem

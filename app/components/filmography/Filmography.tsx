@@ -73,7 +73,7 @@ export default function Filmography(){
 
     return(
         <section className="w-[100vw] min-h-screen bg-primary-white px-[20px] md:px-[50px] py-10 md:py-20 box-border" id="films">
-            <div className="flex items-center gap-5">
+            <div className="flex flex-col md:flex-row md:items-center gap-5">
                 <div className="flex-1 space-y-2">
                     <div className="flex items-center gap-3">
                         <div className='h-[10px] w-[10px] rounded-full bg-[#696969]' />
@@ -81,10 +81,10 @@ export default function Filmography(){
                     </div>
                     <h1 className="text-3xl md:text-[55px] font-bold text-[#444444] font-gelica leading-[120%]" data-aos="fade-up">UZOAMAKA'S FILMOGRAPHY</h1>
                 </div>
-                <p className="max-w-[350px] text-right font-gelica text-[#8E8E8E] text-lg" data-aos="fade-left">'there are years that ask questions and years that answer'~ <span className="text-[#B4B4B4]">zora neale hurston.</span></p>
+                <p className="md:max-w-[350px] md:text-right font-gelica text-[#8E8E8E] text-lg" data-aos="fade-left">'there are years that ask questions and years that answer'~ <span className="text-[#B4B4B4]">zora neale hurston.</span></p>
             </div>
             <div className="w-full flex gap-10 md:gap-20 mt-10 relative">
-                <div className="w-[420px] flex items-center justify-center sticky top-10 h-fit pt-10">
+                <div className="w-[420px hidden md:flex items-center justify-center sticky top-10 h-fit pt-10">
                     <AnimatePresence>
                         <motion.div 
                             key={selectedIndex}
@@ -101,8 +101,8 @@ export default function Filmography(){
                         </motion.div>
                     </AnimatePresence>
                 </div>
-                <div className="flex-1">
-                    <div className="font-eculid grid grid-cols-[100px_170px_150px_1fr_150px] text-sm text-[#444444] gap-2 px-5 py-5 border-b border-[#B4B4B4]">
+                <div className="md:flex-1 w-full">
+                    <div className="font-eculid hidden md:grid grid-cols-[100px_170px_150px_1fr_150px] text-sm text-[#444444] gap-2 px-5 py-5 border-b border-[#B4B4B4]">
                         <p>Year</p>
                         <p>Title</p>
                         <p>Role</p>

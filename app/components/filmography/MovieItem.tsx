@@ -7,14 +7,14 @@ export const MovieItem = ({title, platform, year, role, link, directors, index, 
     return(
         <Link href={link} target="_blank">
             <div 
-                className="font-eculid cursor-pointer group/movie grid items-center grid-cols-[100px_170px_150px_1fr_150px] text-sm text-[#1E1E1E] gap-2 px-5 py-5 border-b border-[#B4B4B4]"
+                className="w-full font-eculid cursor-pointer group/movie flex flex-col md:grid md:items-center grid-cols-[100px_170px_150px_1fr_150px] text-sm text-[#1E1E1E] gap-2 px-5 py-5 border-b border-[#B4B4B4]"
                 onMouseEnter={() => handleHover(index)}
                 data-aos="fade-up"
             >
                 <p className="text-[#8E8E8E]">{year}</p>
                 <p>{title}</p>
-                <p>{role}</p>
-                <p className="text-[#8E8E8E]">{directors}</p>
+                <p><span className="md:hidden">Role: </span>{role}</p>
+                <p className="text-[#8E8E8E]"><span className="md:hidden">Director: </span>{directors}</p>
                 <div className="w-full flex items-center">
                     <div className="flex-1">
                         <Image

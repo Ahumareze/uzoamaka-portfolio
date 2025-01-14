@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </section>
       <Biography />
-      <div className="w-full h-screen p-20">
+      <div className="w-full h-screen px-[20px] py-10 md:p-20">
         <YoutubeVideo />
       </div>
       <Blogs />
