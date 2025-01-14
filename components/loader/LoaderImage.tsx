@@ -23,6 +23,7 @@ export default function LoaderImage(){
             <Image
                 src={loadingTextLogo}
                 alt='loader text'
+                priority
                 className='h-[300px] relative'
                 style={{objectFit: "contain"}}
                 id='loader-text-animation'

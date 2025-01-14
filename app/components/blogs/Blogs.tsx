@@ -7,7 +7,7 @@ import classes from './styles.module.css';
 export default function Blogs(){
     return(
         <div className="w-[100vw] space-y-10 py-10 md:py-20 overflow-x-hidden" id="blogs">
-            <div className="flex flex-col md:flex-row items-center gap-5 px-[20px] md:px-[50px]">
+            <div className="flex flex-col md:flex-row md:items-center gap-5 px-[20px] md:px-[50px]">
                 <div className="flex-1 space-y-2">
                     <div className="flex items-center gap-3">
                         <div className='h-[10px] w-[10px] rounded-full bg-[#696969]' />
@@ -22,7 +22,7 @@ export default function Blogs(){
                     </Link>
                 </div>
             </div>
-            <div className="h-[600px] w-[100vw] overflow-x-hidden relative">
+            <div className="h-[400px] md:h-[600px] w-[100vw] overflow-x-hidden relative">
                 <div className={`${classes.container} w-full flex items-center gap-5 px-5`}>
                     {BLOGS.map(({
                         image,
