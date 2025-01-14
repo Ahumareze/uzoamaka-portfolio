@@ -8,8 +8,8 @@ export default function Footer(){
 
     function SocialCard({icon, name, link, isLight}: {icon: React.ReactNode, name: string, link: string, isLight?: boolean}){
         return(
-            <Link href={link} target="_blank">
-                <div className="relative w-[190px] h-[150px] flex flex-col gap-0 cursor-pointer group/item overflow-hidden">
+            <Link href={link} target="_blank" className="w-full">
+                <div className="relative w-full h-[150px] flex flex-col gap-0 cursor-pointer group/item overflow-hidden">
                     <div className={`flex-1 w-full flex items-center justify-center text-5xl ${isLight ? 'text-primary-black bg-primary-white' : 'bg-primary-black text-primary-white'}`}>
                         <div className="relative group-hover/item:pb-10 group-hover/item:scale-90 duration-500 ease-in-out">
                             {icon}
@@ -26,14 +26,14 @@ export default function Footer(){
     }
 
     return(
-        <section className="w-full px-[20px] md:px-[50px] bg-primary-white">
-            <div className="flex items-center">
-                <div className="flex-1 flex items-center">
+        <section className="w-full md:px-[50px] bg-primary-white">
+            <div className="flex flex-col md:flex-row md:items-center w-full overflow-x-hidden">
+                <div className="flex-1 flex items-center px-[20px] md:px-0 py-5 md:py-0">
                     <Link href={'mailto:hellouzoamaka@gmail.com'} target="_blank">
-                        <h1 className="flex-1 text-5xl font-bold font-gelica text-primary-black hover:underline duration-300 ease-in-out">hellouzoamaka@gmail.com</h1>
+                        <h1 className="flex-1 text-4xl md:text-5xl font-bold font-gelica text-primary-black hover:underline duration-300 ease-in-out">hellouzoamaka@gmail.com</h1>
                     </Link>
                 </div>
-                <div className="flex items-center">
+                <div className="grid grid-cols-3 md:grid-cols-[190px_190px_190px] w-full">
                     <SocialCard
                         icon={<SiSubstack />}
                         link=""
@@ -52,7 +52,7 @@ export default function Footer(){
                     />
                 </div>
             </div>
-            <div className="border-t border-[#B4B4B4] w-full flex items-center py-10">
+            <div className="border-t border-[#B4B4B4] w-full flex flex-col md:flex-row md:items-center gap-5 px-[20px] md:px-0 md:gap-2 py-5 md:py-10">
                 <div className="flex-1 text-sm text-[#696969] font-eculid">
                     <Link href={'/'} target="_blank" className="underline">Adesewa</Link> served Design, <Link href={'/'} target="_blank" className="underline">Gideon</Link> served motion, <Link href={'/'} target="_blank" className="underline">Ifeanyi</Link> served code.🍽️
                 </div>
