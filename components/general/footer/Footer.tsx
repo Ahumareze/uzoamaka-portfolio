@@ -27,13 +27,13 @@ export default function Footer(){
 
     return(
         <section className="w-full md:px-[50px] bg-primary-white">
-            <div className="flex flex-col md:flex-row md:items-center w-full overflow-x-hidden">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full overflow-x-hidden">
                 <div className="flex-1 flex items-center px-[20px] md:px-0 py-5 md:py-0">
                     <Link href={'mailto:hellouzoamaka@gmail.com'} target="_blank">
                         <h1 className="flex-1 text-4xl md:text-5xl font-bold font-gelica text-primary-black hover:underline duration-300 ease-in-out">hellouzoamaka@gmail.com</h1>
                     </Link>
                 </div>
-                <div className="grid grid-cols-3 md:grid-cols-[190px_190px_190px] w-full">
+                <div className="grid grid-cols-3 md:grid-cols-[190px_190px_190px] w-full md:w-fit">
                     <SocialCard
                         icon={<SiSubstack />}
                         link=""
@@ -54,7 +54,7 @@ export default function Footer(){
             </div>
             <div className="border-t border-[#B4B4B4] w-full flex flex-col md:flex-row md:items-center gap-5 px-[20px] md:px-0 md:gap-2 py-5 md:py-10">
                 <div className="flex-1 text-sm text-[#696969] font-eculid">
-                    <Link href={'/'} target="_blank" className="underline">Adesewa</Link> served Design, <Link href={'/'} target="_blank" className="underline">Gideon</Link> served motion, <Link href={'/'} target="_blank" className="underline">Ifeanyi</Link> served code.🍽️
+                    <Link href={'https://sewaadebayo.com'} target="_blank" className="underline">Adesewa</Link> served Design, <Link href={'/'} target="_blank" className="underline">Gideon</Link> served motion, <Link href={'https://ifeanyicodes.com'} target="_blank" className="underline">Ifeanyi</Link> served code.🍽️
                 </div>
                 <p className="text-sm text-[#696969] font-eculid">© 2024 All Rights Reserved. All beauty to Uzoamaka.</p>
             </div>

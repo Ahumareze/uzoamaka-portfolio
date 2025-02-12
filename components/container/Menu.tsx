@@ -122,12 +122,12 @@ export default function Menu({closeMenu}: {closeMenu: boolean}){
                         </div>
                         <p className='text-3xl font-gelica'>HEADING TO THE OSCARS!</p>
                     </div>
-                    <div className="absolute w-[270px] right-10 bottom-5">
-                        {selected !== null &&
-                            <AnimatePresence>
+                    <div className="absolute w-[270px] right-10 bottom-5 flex">
+                        <AnimatePresence>
+                            {selected !== null &&
                                 <motion.div 
                                     key={selected}
-                                    initial={{ scale: 0.9, opacity: 0}}
+                                    initial={{ scale: 0.7, opacity: 0}}
                                     animate={{ scale: 1, opacity: 1}}
                                 >
                                     <Image
@@ -138,8 +138,8 @@ export default function Menu({closeMenu}: {closeMenu: boolean}){
                                         style={{borderRadius: 10}}
                                     />
                                 </motion.div>
-                            </AnimatePresence>
-                        }
+                            }
+                        </AnimatePresence>
                     </div>
                 </div>
             </div>
